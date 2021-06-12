@@ -7,7 +7,7 @@ import java.util.ArrayList;
 
 import static sample.view.print;
 
-public class Data {//
+public class Data {//sdf
 
     public boolean hasGameStarted;
     public boolean isContinueGame;
