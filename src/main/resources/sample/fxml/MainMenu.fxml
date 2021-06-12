@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.text.TextFlow?>
+<AnchorPane xmlns="http://javafx.com/javafx"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="sample.MainMenu"
+            prefHeight="400.0" prefWidth="600.0" id="pane">
+
+    <VBox AnchorPane.leftAnchor="0">
+
+        <MenuBar>
+            <Menu text="menu">
+                <MenuItem text="change password" onAction="#changePassword"/>
+                <MenuItem text="Logout" onAction="#handleLogout"/>
+                <MenuItem text="delete acount" onAction="#deleteAccount"/>
+            </Menu>
+        </MenuBar>
+    </VBox>
+
+    <VBox AnchorPane.leftAnchor="75" AnchorPane.topAnchor="100" spacing="10">
+        <TextFlow fx:id="username"/>
+        <TextFlow fx:id="score"/>
+    </VBox>
+
+    <VBox AnchorPane.rightAnchor="75" AnchorPane.topAnchor="50" spacing="5" alignment="CENTER">
+        <Button fx:id="picButton" onMouseClicked="#choseFile" alignment="CENTER"/>
+        <Label fx:id="buttonText" alignment="CENTER"/>
+    </VBox>
+
+    <Button AnchorPane.rightAnchor="0" fx:id="audioButton"/>
+
+
+    <HBox AnchorPane.bottomAnchor="100" AnchorPane.rightAnchor="100" AnchorPane.leftAnchor="100"  alignment="CENTER" spacing="10">
+        <Button alignment="CENTER" fx:id="scoreBoardButton"/>
+        <Button alignment="CENTER" fx:id="gameButton"/>
+    </HBox>
+
+</AnchorPane>

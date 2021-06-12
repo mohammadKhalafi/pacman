@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import com.sun.javafx.webkit.theme.RenderThemeImpl.FormMenuList?>
+<?import javafx.scene.text.Text?>
+
+
+<BorderPane xmlns="http://javafx.com/javafx"
+       xmlns:fx="http://javafx.com/fxml"
+       fx:controller="sample.RegisterMenu" id="pane">
+
+    <top>
+        <HBox spacing="5">
+            <Button fx:id="backButton" onMouseClicked="#ClickBack"/>
+            <Button fx:id="audioButton"/>
+        </HBox>
+
+    </top>
+
+    <center>
+            <GridPane BorderPane.alignment="CENTER" alignment="CENTER"
+                      hgap="10" vgap="10">
+
+                <Label text="welcome" styleClass="yellow" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+                <Label text="username : " GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+                <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="username"/>
+
+                <Label text="password : " GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+                <TextField GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="password"/>
+
+                <Label text="repeat password : " GridPane.columnIndex="1" GridPane.rowIndex="3"/>
+
+                <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="repeatedPassword"/>
+
+                <Button text="sing in" GridPane.columnIndex="1" GridPane.rowIndex="4" onMouseClicked="#onClick"/>
+
+                <Label fx:id="Error" GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="red" minWidth="250"/>
+
+
+            </GridPane>
+
+    </center>
+
+
+<!--    <Group BorderPane.alignment="BASELINE_CENTER">-->
+
+<!--        <Label text="welcome" styleClass="yellow" GridPane.columnIndex="1" GridPane.rowIndex="0"/>-->
+
+<!--        <Label text="username : " GridPane.columnIndex="1" GridPane.rowIndex="1"/>-->
+
+<!--        <TextField GridPane.columnIndex="2" GridPane.rowIndex="1" fx:id="username"/>-->
+
+<!--        <Label text="password : " GridPane.columnIndex="1" GridPane.rowIndex="2"/>-->
+
+<!--        <TextField GridPane.columnIndex="2" GridPane.rowIndex="2" fx:id="password"/>-->
+
+<!--        <Label text="repeat password : " GridPane.columnIndex="1" GridPane.rowIndex="3"/>-->
+
+<!--        <TextField GridPane.columnIndex="2" GridPane.rowIndex="3" fx:id="repeatedPassword"/>-->
+
+<!--        <Button text="sing in" GridPane.columnIndex="1" GridPane.rowIndex="4" onMouseClicked="#onClick"/>-->
+
+<!--        <Label fx:id="Error" GridPane.columnIndex="2" GridPane.rowIndex="4" styleClass="red"/>-->
+
+
+<!--    </Group>-->
+
+</BorderPane>
+
+

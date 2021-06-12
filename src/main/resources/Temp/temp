@@ -1,0 +1,91 @@
+DataBaseController.createFile("data.json", new Data(Pacman.getInstance().board, game.getUsername()));
+
+        this.username = username;
+
+        life = game.getCurrentInstance().
+        life;
+
+        BoardData = Pacman.getInstance()
+        .board.getData();
+
+        pacmanData = Pacman.getInstance()
+        .getData();
+
+        for(roh roh: roh.rohs){
+            rohDatas.add(roh.getData());
+        }
+    }
+
+
+
+    //    public static boolean isArrowValid() {
+    //
+    //        if (!isSpecialPoint(Pacman.getInstance())) {
+    //            return false;
+    //        }
+    //
+    //        return isNotNextCellWall(new Pair(Pacman.getInstance().arrow.arrowKey), Pacman.getInstance());
+    //    }
+    //
+    //    public static boolean isNotNextCellWall(Pair pair, Node node) {
+    //
+    //        Pacman ball = Pacman.getInstance();
+    //
+    //        double X = node.getBoundsInParent().getCenterX();
+    //        double Y = node.getBoundsInParent().getCenterY();
+    //
+    //
+    //        int J = (int) (GridPane.getRowIndex(getCell(X, Y)) + pair.j);
+    //        int I = (int) (GridPane.getColumnIndex(getCell(X, Y)) + pair.i);
+    //
+    //
+    //        if (((Cell) ball.board.getChildren().get(getIndex(I, J))).model != 1) {
+    //            return false;
+    //        }
+    //
+    //        return true;
+    //    }
+    //
+    //    public static int getNextCellModel(Pair pair, Node node) {
+    //
+    //        Pacman ball = Pacman.getInstance();
+    //
+    //        double X = node.getBoundsInParent().getCenterX();
+    //        double Y = node.getBoundsInParent().getCenterY();
+    //
+    //
+    //        int J = (int) (GridPane.getRowIndex(getCell(X, Y)) + pair.j);
+    //        int I = (int) (GridPane.getColumnIndex(getCell(X, Y)) + pair.i);
+    //
+    //
+    //        return ((Cell) ball.board.getChildren().get(getIndex(I, J))).model;
+    //
+    //    }
+    //
+    //    public static boolean isSpecialPoint(Node node) {
+    //
+    //        double X = node.getBoundsInParent().getCenterX();
+    //        double x = (X - (sceneX / 2 % 30)) % 30;
+    //
+    //        double Y = node.getBoundsInParent().getCenterY();
+    //        double y = (Y - (sceneY / 2 % 30)) % 30;
+    //
+    //        if (x > 0.1) {
+    //            return false;
+    //        }
+    //
+    //        if (y > 0.01) {
+    //            return false;
+    //        }
+    //        return true;
+    //    }
+    //
+    //
+    //    public static Node getCell(double x, double y) {
+    //
+    //        int i = (int) Math.ceil((x - (sceneX / 2 - Board.numColumn * 15))) / 30;
+    //        int j = (int) Math.ceil((y - (sceneY / 2 - Board.numRow * 15))) / 30;
+    //
+    //
+    //        return Pacman.getInstance().board.getChildren().get(getIndex(i, j));
+    //    }
